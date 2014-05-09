@@ -8,8 +8,7 @@ config = {
     // ### Development **(default)**
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
-        url: 'http://my-ghost-blog.com',
-I
+        url: 'http://127.0.0.1',
         // Example mail config
         // Visit http://docs.ghost.org/mail for instructions
         // ```
@@ -34,9 +33,11 @@ I
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '0.0.0.0',
+            //host: '0.0.0.0',
+            host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: process.env.PORT
+            //port: process.env.PORT
+            port: '2368'
         }
     },
 
@@ -47,21 +48,23 @@ I
         url: 'http://vast-everglades-6849.herokuapp.com',
         mail: {},
         database: {
-        	client: 'postgres',
-        	connection: {
-				host: 'ec2-54-204-27-119.compute-1.amazonaws.com',
-				user: 'ejqtyzyckiervi',
-				password: 'as8RVKlAIGM04xKsuzQNCRJsYD',
-				database: 'dc2ir12qpka7qn',
-				port: '5432'
-        },
-            debug: false
+          client: 'postgres',
+          connection: {
+            host: 'ec2-54-204-27-119.compute-1.amazonaws.com',
+            user: 'ejqtyzyckiervi',
+            password: 'as8RVKlAIGM04xKsuzQNCRJsYD',
+            database: 'dc2ir12qpka7qn',
+            port: '5432'
+          },
+          debug: false
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
+            //host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: process.env.PORT
+            //port: '2368'
         }
     },
 

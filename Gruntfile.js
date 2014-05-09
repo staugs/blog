@@ -70,9 +70,9 @@ var path           = require('path'),
                 livereload: {
                     files: [
                         // Theme CSS
-                        'content/themes/casper/css/*.css',
+                        'content/themes/site/css/*.css',
                         // Theme JS
-                        'content/themes/casper/js/*.js',
+                        'content/themes/site/js/*.js',
                         // Client CSS
                         'core/client/assets/css/*.css',
                         // Admin JS
